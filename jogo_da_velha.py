@@ -1,27 +1,38 @@
-blank = "  "
+blank = "A"
+
+
 def criarBoard():
-  board = [
-    [blank, blank, blank],
-    [blank, blank, blank],
-    [blank, blank, blank],
-  ] 
+    board = [
+        [blank, blank, blank],
+        [blank, blank, blank],
+        [blank, blank, blank],
+    ]
 
-  return board
+    return board
 
-def printBoard():
-  pass
 
-def getInputValido():
-  pass
+def printBoard(board):
+    for i in range(3):
+        print("|".join(board[i]))
+        print("------")
+
+
+def getInputValido(mensagem):
+    print(mensagem)
+    try:
+        n = int(input(mensagem))
+        print("Sucesso", n)
+    except:
+               print("Numero não valido")
+               getInputValido(mensagem)
 
 def verificaMovimento():
-  pass
+    pass
+
 
 def fazMovimento():
-  pass
+    pass
+
 
 def verificaGanhador(board):
-    return True
-
-
-
+    return False
