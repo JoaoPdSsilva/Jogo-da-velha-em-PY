@@ -8,5 +8,5 @@ print(board)
 ganhador = verificaGanhador(board)
 while (not ganhador):
     printBoard(board)
-    getInputValido("Digite a linha")
+    getInputValido("Digite a linha ")
     break
